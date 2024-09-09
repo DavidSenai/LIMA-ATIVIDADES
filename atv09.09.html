@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Declaração do tipo de documento (HTML5) -->
+    <meta charset="UTF-8" />
+    <!-- Define o conjunto de caracteres usado -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link para o arquivo de estilos externo -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Título da página -->
+    <title>Formulário</title>
+  </head>
+  <body>
+    <!-- Início do formulário -->
+    <form action="#" method="get">
+      <!-- Campo para inserir o nome do usuário -->
+      <label for="nome">Nome:</label>
+      <input
+        type="text"
+        name="nome"
+        id="nome"
+        placeholder="Digite seu nome"
+        required
+      />
+
+      <br />
+      <br />
+
+      <!-- Campo para inserir o email do usuário -->
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Digite seu email"
+        required
+      />
+
+      <br />
+      <br />
+
+      <!-- Campo para inserir a senha do usuário -->
+      <label for="password">Senha:</label>
+      <input type="password" name="password" id="password" />
+
+      <br />
+      <br />
+
+      <!-- Campo para inserir a idade, entre 18 e 60 anos -->
+      <label for="idade">Idade:</label>
+      <input type="number" name="idade" id="idade" min="18" max="60" />
+
+      <br />
+      <br />
+
+      <!-- Campo para o upload de uma imagem de perfil -->
+      <label for="imgPerfil">Imagem Perfil:</label>
+      <input type="file" name="imgPerfil" id="imgPerfil" />
+
+      <br />
+      <br />
+
+      <!-- Campo para o upload de múltiplas imagens de produtos -->
+      <label for="imgProdutos">Imagem Produtos:</label>
+      <input type="file" name="imgProdutos" id="imgProdutos" multiple />
+
+      <br />
+      <br />
+
+      <!-- Campo para inserir o número de telefone -->
+      <label for="phone">Telefone:</label>
+      <input type="tel" name="phone" id="phone" minlength="11" maxlength="15" />
+
+      <br />
+      <br />
+
+      <!-- Campo para inserir o valor de um produto, com passo de 0.010 -->
+      <label for="valorProduto">Valor:</label>
+      <input
+        type="number"
+        name="valorProduto"
+        id="valorProduto"
+        min="0"
+        step="0.010"
+      />
+
+      <br />
+      <br />
+
+      <!-- Campo para selecionar uma cor favorita -->
+      <label for="cor_favorita">Cor favorita:</label>
+      <input type="color" name="cor_favorita" id="cor_favorita" />
+
+      <br />
+      <br />
+
+      <!-- Checkboxes para selecionar esportes preferidos -->
+      <input type="checkbox" name="Basquete" id="Basquete" />
+      <label for="Basquete">Basquete</label>
+
+      <input type="checkbox" name="ping_pong" id="ping_pong" />
+      <label for="ping_pong">Ping Pong</label>
+
+      <br />
+      <br />
+
+      <!-- Botões de seleção para indicar o sexo -->
+      <input type="radio" name="sexo" id="feminino" value="feminino" />
+      <label for="feminino">Feminino</label>
+
+      <input type="radio" name="sexo" id="masculino" value="masculino" />
+      <label for="masculino">Masculino</label>
+
+      <br />
+      <br />
+
+      <!-- Menu dropdown para selecionar um país -->
+      <label for="country">País:</label>
+      <select name="country" id="country">
+        <option value="Brasil">Brasil</option>
+        <option value="EUA">EUA</option>
+        <option value="Argentina">Argentina</option>
+        <option value="Alemanha">Alemanha</option>
+      </select>
+
+      <br />
+      <br />
+
+      <!-- Campo de texto para inserir uma descrição -->
+      <label for="descricao">Descrição:</label>
+      <textarea
+        id="descricao"
+        name="descricao"
+        placeholder="Digite uma breve descrição sobre você!"
+        required
+      ></textarea>
+
+      <br />
+      <br />
+
+      <!-- Botão para enviar o formulário -->
+      <input type="submit" value="Enviar Formulário" />
+    </form>
+    <!-- Fim do formulário -->
+  </body>
+</html>
